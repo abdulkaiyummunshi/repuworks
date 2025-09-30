@@ -1,0 +1,28 @@
+.btn_wrapper{
+    height: 68px;
+
+    display: flex;
+    align-items: center;
+    a{
+        border-radius: 36px;
+        padding: 18px 40px;
+        width: fit-content;
+        // height: 64px;
+        background-color: $primary;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 20px;
+        span{
+            margin-left: 8px;
+        }
+        line-height: 32px;
+        letter-spacing: -0.02em;
+        text-align: center;
+        color: #f5f7fa;
+        @include sm{
+            padding: 7px 32px;
+            font-size: 16px;
+        }
+    }
+   
+    }

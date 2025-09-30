@@ -1,0 +1,866 @@
+
+.tk_hero_section{
+    background-color: $bg_color;
+    height: 1062px;
+    padding-top: 174px;
+    
+    @include sm{
+        height: 845px;
+        padding-top: 136px;
+    }
+    .bg_blur{
+        background: linear-gradient(180deg, rgba(0, 47, 65, 0) 0%, #002f41 100%);
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: 100%;
+    }
+    .star_area{
+        position: relative;
+        height: 450px;
+        .star1{
+            top: -24%;
+            position: absolute;
+            left: -4%;
+            width: 429px;
+            height: 450px;
+            z-index: 10;
+            @include sm{
+                top: 6%;
+                width: 193px;
+                height: 202px;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        .star2{
+            top: -24%;
+            position: absolute;
+            right: -5%;
+            width: 429px;
+            height: 450px;
+            z-index: 10;
+            @include sm{
+                top: 6%;
+                width: 193px;
+                height: 202px;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+    .person1{
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        @include transformX(-31%);
+        z-index: 10;
+        height: 518px;
+        width: 460px;
+        @include sm{
+            width: 345px;
+            height: 337px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .person2{
+        position: absolute;
+        bottom: 0px;
+        height: 518px;
+        width: 460px;
+        @include sm{
+            width: 345px;
+            height: 337px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        left: 50%;
+        @include transformX(-73%);
+        z-index: 10;
+    }
+    .vector{
+        position: absolute;
+        bottom: 0px;
+        .vector_child{
+            height: 602px;
+            width: 800px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            @include transformX(-74%);
+            z-index: 1;
+            @include sm{
+                @include transformX(-50%);
+                width: 100%;
+                height: 443px;
+
+            }
+            
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+/*---Logo Slider Start---*/
+.logo_slider_area{
+    @include flex(row, center, center);
+    background-color: #002a3a;
+    border-bottom: 1px solid rgba(245, 247, 250, 0.15);
+    border-top: 1px solid rgba(245, 247, 250, 0.15);
+    padding: 34px 0px;
+    @include sm{
+        padding: 18px 0px;
+    }
+    width: 100%;
+    .logo_card{
+        @include flex(row, center, center);
+        img{
+            cursor: pointer;
+            opacity: 0.2;
+            @include transition(0.4s);
+            &:hover{
+                opacity: 1;
+            }
+
+        }
+
+    }
+}
+/*---Logo Slider End---*/
+
+/*---Problem Solution Start---*/
+.problem_solution_area{
+    padding:130px 0px;
+    background: #002a3a;
+    .problem_solution_wrapper{
+        margin-top: 60px;
+        border: 1px solid rgba(197, 203, 211, 0.15);
+        border-radius: 20px;
+        padding: 48px;
+        width: 100%;
+        background-color: #002e40;
+        padding: 48px;
+        @media (min-width: 768px) and (max-width: 998px){
+            padding: 36px;
+            .row{
+                &.style_1{
+                    gap: 20px;
+                }
+            }
+        }
+        @include sm{
+            padding: 20px;
+            .row{
+                &.style_1{
+                    gap: 20px;
+                }
+            }
+        }
+        .pro_solution_card{
+            border-radius: 16px;
+            padding: 36px 48px;
+            width: 100%;
+            height: 100%;
+            background-color: #002a3a;
+                @media (min-width: 768px) and (max-width: 998px){
+                    padding: 36px 32px;
+                    @include flex(row, flex-start, flex-start);
+                    gap: 33px;
+                    .card_body{
+                        width: calc(100% - 135px);
+                    }
+                }
+                @include sm{
+                    padding: 16px;
+                }
+            .icon_area{
+                width: 172px;
+                height: 172px;
+                @media (min-width: 768px) and (max-width: 998px){
+                    width: 100px;
+                    height: 100px;
+                }
+                @include sm{
+                    width: 64px;
+                    height: 64px;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+            .card_title{
+                margin-top: 47px;
+                @media (min-width: 768px) and (max-width: 998px){
+                    margin-top: 0px;
+                }
+                @include sm{
+                    margin-top: 19px;
+                }
+                h4{
+                    font-weight: 500;
+                    font-family: $second-family;
+                    font-size: 36px;
+                    line-height: 48px;
+                    letter-spacing: -0.04em;
+                    color: #f5f7fa;
+                    @include sm{
+                        font-size: 24px;
+                        line-height: 36px;
+                    }
+                }
+            }
+            .card_description{
+                margin-top: 16px;
+                @media (min-width: 768px) and (max-width: 998px){
+                    margin-top: 0px;
+                }
+                @include sm{
+                    margin-top: 12px;
+                }
+                p{
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 31px;
+                    letter-spacing: -0.01em;
+                    color: #b5bcc4;
+                    @include sm{
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
+                }
+            }
+        }
+    }
+}
+/*---Problem Solution End---*/
+
+/*---How it Work Start---*/
+.how_works_area{
+    padding: 132px 0px;
+    background-color: $bg_color;
+    .heading_area{
+        padding: 0px 120px;
+        @include nesthubmax{
+            padding: 0px 60px;
+        }
+        .heading{
+            padding: 120px 0px 32px 0px;
+            border-right: 1px solid #e4e4e4;
+            border-left: 1px solid #e4e4e4;
+            @include nesthubmax{
+                padding: 60px 0px 16px 0px;
+            }
+            @include nesthub{
+                padding: 60px 0px 16px 0px;
+            }
+            @media (min-width: 768px) and (max-width: 998px){
+               border: none;
+               padding: 56px 0px 32px 0px;
+            }
+            &.style_01{
+                padding: 32px 0px 120px 0px;
+                @include nesthubmax{
+                padding: 16px 0px 60px 0px;
+            }
+                @include nesthub{
+                padding: 16px 0px 60px 0px;
+            }
+                @include sm{
+                    padding:0px 0px 35px 0px;
+                    .btn_wrapper{
+                        padding: 0px 30px;
+                        a{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            @include sm{
+                border: none;
+                padding: 32px 0px 0px 0px;
+            }
+        }
+        @include sm{
+            padding: 0px;
+        }
+    }
+    .how_works_wrapper{
+        border-radius: 20px;
+        background-color: $text_color2;
+        width: 100%;
+        // padding: 0px 0px 120px 0px;
+        .how_wroks_contains{
+            padding: 0px 120px;
+            border-top: 1px solid #e4e4e4;
+            border-bottom: 1px solid #e4e4e4;
+            @include nesthubmax{
+                padding: 0px 60px;
+            }
+            @include nesthub{
+                padding: 0px;
+            }
+            @media (min-width: 768px) and (max-width: 998px){
+                padding: 0px;
+            }
+            @include sm{
+                padding: 0px;
+                border: none;
+            }
+        }
+        .row{
+            &.style_1{
+                border-right: 1px solid #e4e4e4;
+                border-left: 1px solid #e4e4e4;
+                .col-lg-4{
+                    padding: 60px 60px;
+                    border-right: 1px solid #e4e4e4;
+                    border-left: 1px solid #e4e4e4;
+                    &:nth-child(1){
+                            border: none;
+                        }
+                    &:nth-child(3){
+                            border: none;
+                        }
+                }
+                @include nesthubmax{
+                    // border: none !important;
+                    .col-lg-4{
+                        padding:40px 40px;
+                        &:nth-child(1){
+                            border: none;
+                        }
+                    }
+                }
+                @include nesthub{
+                    border: none !important;
+                    .col-lg-4{
+                        padding:40px 40px;
+                        &:nth-child(1){
+                            border: none;
+                        }
+                    }
+                }
+                 @media (min-width: 768px) and (max-width: 998px){
+                border: none;
+                .col-lg-4{
+                    padding: 34px 36px;
+                    border: none;
+                }
+            }
+                 @include sm{
+                    padding: 17px 30px;
+                border: none;
+                gap: 36px;
+                .col-lg-4{
+                    padding: 0px;
+                    border: none;
+                }
+            }
+            }
+        }
+        .work_card{
+            @media (min-width: 768px) and (max-width: 998px){
+                @include flex(row, center, center);
+                gap: 24px;
+                height: 100%;
+                position: relative;
+            }
+            .card_step{
+                border: 1px solid #ebebeb;
+                border-radius: 31px;
+                padding: 8px 24px 8px 12px;
+                width: fit-content;
+                @include flex(row, center, center);
+                gap: 8px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 26px;
+                color: #002f41;
+                background-color: $white;
+                span{
+                    width: 28px;
+                    height: 28px;
+                    @include border-radius(50%);
+                    background-color: $primary;
+                    text-align: center;
+                    line-height: 25px;
+                }
+                 @media (min-width: 768px) and (max-width: 998px){
+                position: absolute;
+                right: 47%;
+                @include transformX(50%);
+                top: 0px;
+            }
+            }
+            .card_body{
+                 @media (min-width: 768px) and (max-width: 998px){
+                height: 100%;
+                @include flex(column, flex-end, flex-start);
+                width: calc(100% - 304px);
+            }
+            }
+            .card_icon_wrapper{
+                margin-top: 17px;
+                 
+                padding: 20px 40px;
+                background-color: $white;
+                @include border-radius(12px);
+                @include flex(row, center, center);
+                gap: 12px;
+                row-gap: 6px;
+                flex-wrap: wrap;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+                &.style_1{
+                    min-height: 280px;
+                }
+                span{
+                    border: 1px solid #ebebeb;
+                    width: 55px;
+                    height: 55px;
+                    @include border-radius(50%);
+                    text-align: center;
+                    line-height: 55px;
+                    background-color: #fcfcfc;
+                    display: inline-block;
+                    img{
+                        width: 25px;
+                        height: 25px;
+                        object-fit: contain;
+                    }
+
+                }
+                @include nesthubmax{
+                    padding: 20px 16px;
+                }
+                @include nesthub{
+                    padding: 20px 16px;
+
+                }
+                @media (min-width: 768px) and (max-width: 998px){
+               margin-top: 0px;
+               width: 280px;
+                height: fit-content;
+                padding: 20px;
+
+            }
+            }
+            h4{
+                margin-top: 23px;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 36px;
+                letter-spacing: -0.02em;
+                color: #002a3a;
+            }
+            .card_description{
+                p{
+                    margin-top: 12px;
+                    @include nesthubmax{
+                        margin-top: 6px;
+                    }
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    letter-spacing: -0.02em;
+                    color: #667581;
+                }
+
+            }
+        }
+    }
+}
+/*---How it Work End---*/
+
+/*---Performanc bullet points Start---*/
+.performance_bullet_area{
+    background: #002a3a;
+    padding: 136px 0px;
+    .performance_bullet_wrapper{
+        ul{
+            border: 1px solid rgba(197, 203, 211, 0.15);
+            border-radius: 16px;
+            @include flex(row, space-between, center);
+            gap: 20px;
+            @include sm{
+                gap: 0px;
+            }
+            flex-wrap: wrap;
+            li{
+                border-bottom: 1px solid rgba(245, 247, 250, 0.15);
+                padding: 56px 40px;
+                width: calc(50% - 20px);
+                font-weight: 400;
+                font-size: 28px;
+                line-height: 157%;
+                letter-spacing: -0.02em;
+                color: #f5f7fa;
+                &:last-child{
+                    width: 100%;
+                }
+                span{
+                    color: #ffc001;
+                    margin-right: 12px;
+                }
+                @include md{
+                    width: 100%;
+                }
+                @include sm{
+                    @include flex(column, flex-start, flex-start);
+                    gap: 10px;
+                    padding: 20px;
+                    font-size: 20px;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+}
+/*---Performanc bullet points End---*/
+
+/*---Simple Pricing Plan Start---*/
+.simple_pricing_plan{
+    width: 100%;
+    background-color: #141a1f;
+    padding: 132px 0px;
+    .tk_pricing_plan{
+        background-color: #010c15;
+        @include border-radius(20px);
+        .heading_area{
+            padding: 0px 120px;
+            @include nesthubmax{
+                padding: 0px 60px;
+            }
+            @include nesthub{
+                padding: 0px 40px;
+            }
+            @include md{
+                padding: 0px;
+                border: none;
+            }
+            .heading{
+                padding: 120px 0px 43px 0px;
+                @include nesthubmax{
+                    padding: 60px 0px 20px 0px;
+                }
+                @include nesthub{
+                    padding: 40px 0px 20px 0px;
+                }
+                @include md{
+                    padding: 56px 10px 30px 10px;
+                }
+                border-left: 1px solid #1a2630;
+                border-right: 1px solid #1a2630;
+                &.style_1{
+                    padding: 43px 60px 120px 60px;
+                    @include nesthubmax{
+                        padding: 30px 30px 60px 30px;
+                    }
+                    @include nesthub{
+                        padding: 30px 30px 60px 30px;
+                    }
+                }
+                p{
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 32px;
+                    letter-spacing: -0.02em;
+                    text-align: center;
+                    color: #b5bcc4;
+                    margin-bottom: 32px;
+                    b{
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+    .simple_pricing_area{
+        background-color: #010c15;
+        padding: 0px 120px;
+        @include nesthubmax{
+            padding: 0px 60px;
+        }
+        @include nesthub{
+            padding: 0px 40px;
+        }
+        @include md{
+            padding: 0px 50px;
+            .row{
+                justify-content: space-between;
+            }
+            .col-lg-4{
+                width: 50%;
+                @include sm{
+                    width: 100%;
+                }
+               
+            }
+        }
+        border-top: 1px solid #1a2630;
+        border-bottom: 1px solid #1a2630;
+        
+    }
+    .card_wrapper{
+        padding: 60px;
+        border: 1px solid #1a2630;
+        @include nesthubmax{
+            padding: 40px 30px;
+        }
+        @include nesthub{
+            padding: 30px 20px;
+        }
+        @include md{
+            padding: 30px 0px;
+        
+            // border-left: none;
+
+        }
+        &.price_card_1{
+            @include md{
+                padding: 40px 32px 40px 0px;
+                border: none;
+                border-bottom: 1px solid #1a2630 !important;
+            }
+        }
+        &.price_card_2{
+            @include md{
+                padding: 40px 0px 40px 32px;
+                border: none;
+                border-left: 1px solid #1a2630 !important;
+                border-bottom: 1px solid #1a2630 !important;
+            }
+        }
+        &.price_card_3{
+            @include md{
+                padding: 40px 32px 40px 0px;
+                border: none;
+                border-bottom: 1px solid #1a2630 !important;
+                
+            }
+        }
+        &.price_card_4{
+            @include md{
+                padding: 40px 0px 40px 32px;
+                border: none;
+                border-left: 1px solid #1a2630 !important;
+                border-bottom: 1px solid #1a2630 !important;
+            }
+        }
+        &.price_card_5{
+            @include md{
+                padding: 40px;
+                border: none;
+            }
+        }
+        // background-color: green;
+
+    }
+    .pricing_card{
+        border-radius: 12px;
+        padding: 36px 24px 24px;
+        background: #141a1f;
+        position: relative;
+        &.style_1{
+            background-color: $primary;
+        }
+        &.style_2{
+            background-color: #ffc001;
+            h4{
+                color:  #002f41;
+                span{
+                    color:  #002f41;
+                }
+            }
+            li{
+                color:  #002f41;
+            }
+        }
+        
+    }
+    .card_subtitle{
+        border-radius: 27px;
+        padding: 5px 11px 5px 8px;
+        width: fit-content;
+        background-color: #f5f7fa;
+        position: absolute;
+        top: -16px;
+        left: 20px;
+        p{
+            font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        color: #0b0f12;
+        margin: 0px;
+        padding: 0px;
+        span{
+            font-size: 16px;
+            margin-right: 6px;
+        }
+        }
+    }
+    .card_price{
+        h4{
+            font-weight: 500;
+            font-size: 56px;
+            font-family: $second-family;
+            line-height: 68px;
+            letter-spacing: -0.03em;
+            color: #f5f7fa;
+            span{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                letter-spacing: -0.02em;
+                color: #b5bcc4;
+            }
+        }
+    }
+    .pricing_list{
+        margin-top: 16px;
+        ul{
+            padding-left: 20px;
+            li{
+                list-style-type: disc;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 32px;
+                letter-spacing: -0.02em;
+                color: #b5bcc4;
+            }
+        }
+    }
+    .pricing_list_area{
+        ul{
+            @include flex(column, center, flex-start);
+            gap: 20px;
+            li{
+                @include flex(row, flex-start, flex-start);
+                gap: 10px;
+                b{
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 36px;
+                    letter-spacing: -0.02em;
+                    text-align: right;
+                    color: #f5f7fa;
+                    width: 165px;
+                }
+                p{
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 32px;
+                    letter-spacing: -0.02em;
+                    color: #b5bcc4;
+                }
+            }
+        }
+    }
+}
+/*---Simple Pricing Plan End---*/
+
+/*---Frequently Asked Question Start---*/
+.frequently_question_area{
+   background: #002a3a;
+   padding: 130px 0px;
+.faq-section {
+    width: 100%;
+    @include sm{
+        margin-top:26px;
+    }
+    @include nesthubmax{
+        padding-left: 34px;
+    }
+}
+.accordion {
+    width: 100%;
+    .accordion-item {
+        margin-bottom: 12px;
+        border: 1px solid rgba(197, 203, 211, 0.15);
+        border-radius: 12px;
+        padding: 20px 32px;
+        background: #002e40;
+        @include sm{
+            margin-bottom: 8px;
+        }
+        overflow: hidden; 
+        &.active {
+            background-color: $white;
+            .accordion-header {
+                h3{
+                    color: #002f41;
+                }
+                
+
+                .icon {
+                    transform: rotate(180deg); 
+                    background-color: $white;
+                }
+            }
+            .accordion-content {
+                height: auto; 
+            }
+        }
+    }
+
+    .accordion-header {
+        @include flex(row, space-between, center);
+        padding: 10px 30px;
+        @include sm{
+            padding: 4px 15px;
+        }
+        cursor: pointer;
+         transition: background 0.3s ease;
+        h3{
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 36px;
+            letter-spacing: -0.02em;
+            color: #f5f7fa;
+        }
+        .icon {
+            color:  #b5bcc4;
+        }
+    }
+
+    .accordion-content {
+        height: 0;
+        overflow: hidden;
+        margin-top: -2px;
+        transition: height 0.5s ease-out, padding 0.5s ease-out;
+        p{
+             padding: 21px 30px 20px 30px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: -0.02em;
+            color: #667581;
+        }
+    }
+}
+}
+/*---Frequently Asked Question End---*/
