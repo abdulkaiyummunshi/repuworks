@@ -116,7 +116,7 @@
 						
 					}
 					a {
-						color: $text_color;
+						color:  #032949;
 						&:hover {
 							color: $primary;
 						}
@@ -145,7 +145,7 @@
 					height: 42px;
 					border-radius: 100%;
 					line-height: 42px;
-					color: $text_color;
+					color:  #032949;
 					border: 1px solid #414141;
 					text-align: center;
 					@include transition(0.3s);

@@ -397,6 +397,9 @@ header {
           width: 40px;
           height: 40px; }
 
+.mean-container .mean-nav ul li a {
+  color: #032949; }
+
 .sticky_top {
   width: 100%;
   position: fixed;
@@ -701,7 +704,7 @@ header {
         .offcanvas__wrapper .offcanvas__content .offcanvas__contact ul li .offcanvas__contact-icon {
           margin-right: 20px; }
         .offcanvas__wrapper .offcanvas__content .offcanvas__contact ul li a {
-          color: #b5bcc4; }
+          color: #032949; }
           .offcanvas__wrapper .offcanvas__content .offcanvas__contact ul li a:hover {
             color: #06f; }
     .offcanvas__wrapper .offcanvas__content .offcanvas__contact span {
@@ -718,7 +721,7 @@ header {
         height: 42px;
         border-radius: 100%;
         line-height: 42px;
-        color: #b5bcc4;
+        color: #032949;
         border: 1px solid #414141;
         text-align: center;
         transition: all 0.3s ease; }
@@ -943,7 +946,13 @@ header {
   line-height: 56px;
   letter-spacing: -0.04em;
   color: #f5f7fa; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .heading_area .heading h2 {
+      font-size: 32px;
+      line-height: 44px; } }
 .heading_area .heading.style_1 h2 {
+  color: #002f41; }
+.heading_area .heading.style_02 h2 {
   color: #002f41; }
 
 .description {
@@ -986,38 +995,22 @@ header {
 
   .sm-none {
     display: none; } }
-.highlight_describtion {
-  padding: 20px;
-  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
-  background: #fff;
-  border-radius: 5px;
-  width: 100%;
-  padding: 30px;
-  border-left: 2px solid #06f; }
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-    .highlight_describtion {
-      padding: 10px 20px 15px 15px;
-      margin-top: 20px !important; } }
-  .highlight_describtion strong {
-    font-weight: 400;
-    font-size: 18px;
-    color: #000; }
-    @media only screen and (min-width: 0px) and (max-width: 767px) {
-      .highlight_describtion strong {
-        font-size: 10px; } }
-  .highlight_describtion p {
-    font-weight: 400;
-    font-size: 14px;
-    color: #000;
-    margin-top: 5px; }
-    @media only screen and (min-width: 0px) and (max-width: 767px) {
-      .highlight_describtion p {
-        font-size: 10px; } }
-
 .tk_hero_section {
   background-color: #002f41;
   height: 1062px;
-  padding-top: 174px; }
+  padding-top: 162px; }
+  .tk_hero_section .btn_wrapper {
+    margin-top: 31px; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .tk_hero_section .btn_wrapper {
+        margin-top: 15px; } }
+  @media only screen and (max-width: 991px) {
+    .tk_hero_section .stars {
+      width: 100%;
+      height: 100px; }
+      .tk_hero_section .stars img {
+        width: 100%;
+        height: 100%; } }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .tk_hero_section {
       height: 845px;
@@ -1134,6 +1127,7 @@ header {
 
 /*---Logo Slider Start---*/
 .logo_slider_area {
+  margin-top: -1px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1161,8 +1155,21 @@ header {
 /*---Logo Slider End---*/
 /*---Problem Solution Start---*/
 .problem_solution_area {
+  margin-top: -1px;
   padding: 130px 0px;
   background: #002a3a; }
+  @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    .problem_solution_area {
+      padding: 120px 0px; } }
+  @media only screen and (min-width: 992px) and (max-width: 1024px) {
+    .problem_solution_area {
+      padding: 98px 0px; } }
+  @media only screen and (max-width: 991px) {
+    .problem_solution_area {
+      padding: 80px 0px; } }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .problem_solution_area {
+      padding: 65px 0px; } }
   .problem_solution_area .problem_solution_wrapper {
     margin-top: 60px;
     border: 1px solid rgba(197, 203, 211, 0.15);
@@ -1258,6 +1265,18 @@ header {
 .how_works_area {
   padding: 132px 0px;
   background-color: #002f41; }
+  @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    .how_works_area {
+      padding: 120px 0px; } }
+  @media only screen and (min-width: 992px) and (max-width: 1024px) {
+    .how_works_area {
+      padding: 98px 0px; } }
+  @media only screen and (max-width: 991px) {
+    .how_works_area {
+      padding: 80px 0px; } }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .how_works_area {
+      padding: 65px 0px; } }
   .how_works_area .heading_area {
     padding: 0px 120px; }
     @media only screen and (min-width: 1025px) and (max-width: 1280px) {
@@ -1484,6 +1503,18 @@ header {
 .performance_bullet_area {
   background: #002a3a;
   padding: 136px 0px; }
+  @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    .performance_bullet_area {
+      padding: 120px 0px; } }
+  @media only screen and (min-width: 992px) and (max-width: 1024px) {
+    .performance_bullet_area {
+      padding: 98px 0px; } }
+  @media only screen and (max-width: 991px) {
+    .performance_bullet_area {
+      padding: 80px 0px; } }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .performance_bullet_area {
+      padding: 65px 0px; } }
   .performance_bullet_area .performance_bullet_wrapper ul {
     border: 1px solid rgba(197, 203, 211, 0.15);
     border-radius: 16px;
@@ -1493,7 +1524,7 @@ header {
     align-items: center;
     gap: 20px;
     flex-wrap: wrap; }
-    @media only screen and (min-width: 0px) and (max-width: 767px) {
+    @media only screen and (max-width: 991px) {
       .performance_bullet_area .performance_bullet_wrapper ul {
         gap: 0px; } }
     .performance_bullet_area .performance_bullet_wrapper ul li {
@@ -1512,7 +1543,8 @@ header {
         margin-right: 12px; }
       @media only screen and (max-width: 991px) {
         .performance_bullet_area .performance_bullet_wrapper ul li {
-          width: 100%; } }
+          width: 100%;
+          padding: 42px 40px; } }
       @media only screen and (min-width: 0px) and (max-width: 767px) {
         .performance_bullet_area .performance_bullet_wrapper ul li {
           display: flex;
@@ -1528,10 +1560,27 @@ header {
 /*---Simple Pricing Plan Start---*/
 .simple_pricing_plan {
   width: 100%;
-  background-color: #141a1f;
+  background: #002f41;
   padding: 132px 0px; }
+  @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    .simple_pricing_plan {
+      padding: 120px 0px; } }
+  @media only screen and (min-width: 992px) and (max-width: 1024px) {
+    .simple_pricing_plan {
+      padding: 98px 0px; } }
+  @media only screen and (max-width: 991px) {
+    .simple_pricing_plan {
+      padding: 80px 0px; } }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .simple_pricing_plan {
+      padding: 65px 0px; } }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .simple_pricing_plan .btn_wrapper {
+      width: 100%; }
+      .simple_pricing_plan .btn_wrapper a {
+        width: 100%; } }
   .simple_pricing_plan .tk_pricing_plan {
-    background-color: #010c15;
+    background: #f6f6f6;
     border-radius: 20px;
     -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -1551,8 +1600,8 @@ header {
           border: none; } }
       .simple_pricing_plan .tk_pricing_plan .heading_area .heading {
         padding: 120px 0px 43px 0px;
-        border-left: 1px solid #1a2630;
-        border-right: 1px solid #1a2630; }
+        border-left: 1px solid #e4e4e4;
+        border-right: 1px solid #e4e4e4; }
         @media only screen and (min-width: 1025px) and (max-width: 1280px) {
           .simple_pricing_plan .tk_pricing_plan .heading_area .heading {
             padding: 60px 0px 20px 0px; } }
@@ -1561,7 +1610,12 @@ header {
             padding: 40px 0px 20px 0px; } }
         @media only screen and (max-width: 991px) {
           .simple_pricing_plan .tk_pricing_plan .heading_area .heading {
-            padding: 56px 10px 30px 10px; } }
+            padding: 56px 10px 30px 10px;
+            border: none; } }
+        @media only screen and (min-width: 0px) and (max-width: 767px) {
+          .simple_pricing_plan .tk_pricing_plan .heading_area .heading {
+            border: none;
+            padding: 28px 0px 15px 0px; } }
         .simple_pricing_plan .tk_pricing_plan .heading_area .heading.style_1 {
           padding: 43px 60px 120px 60px; }
           @media only screen and (min-width: 1025px) and (max-width: 1280px) {
@@ -1570,21 +1624,29 @@ header {
           @media only screen and (min-width: 992px) and (max-width: 1024px) {
             .simple_pricing_plan .tk_pricing_plan .heading_area .heading.style_1 {
               padding: 30px 30px 60px 30px; } }
+          @media only screen and (min-width: 0px) and (max-width: 767px) {
+            .simple_pricing_plan .tk_pricing_plan .heading_area .heading.style_1 {
+              padding: 0px 33px 20px 33px; } }
         .simple_pricing_plan .tk_pricing_plan .heading_area .heading p {
           font-weight: 400;
           font-size: 18px;
           line-height: 32px;
           letter-spacing: -0.02em;
           text-align: center;
-          color: #b5bcc4;
+          color: #667581;
           margin-bottom: 32px; }
+          @media only screen and (min-width: 0px) and (max-width: 767px) {
+            .simple_pricing_plan .tk_pricing_plan .heading_area .heading p {
+              font-size: 16px;
+              text-align: left;
+              margin-bottom: 8px; } }
           .simple_pricing_plan .tk_pricing_plan .heading_area .heading p b {
             font-weight: 600; }
   .simple_pricing_plan .simple_pricing_area {
-    background-color: #010c15;
+    background: #f6f6f6;
     padding: 0px 120px;
-    border-top: 1px solid #1a2630;
-    border-bottom: 1px solid #1a2630; }
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4; }
     @media only screen and (min-width: 1025px) and (max-width: 1280px) {
       .simple_pricing_plan .simple_pricing_area {
         padding: 0px 60px; } }
@@ -1593,7 +1655,12 @@ header {
         padding: 0px 40px; } }
     @media only screen and (max-width: 991px) {
       .simple_pricing_plan .simple_pricing_area {
-        padding: 0px 50px; }
+        padding: 0px 50px; } }
+  @media only screen and (max-width: 991px) and (min-width: 0px) and (max-width: 767px) {
+    .simple_pricing_plan .simple_pricing_area {
+      padding: 0px 30px;
+      border: none !important; } }
+    @media only screen and (max-width: 991px) {
         .simple_pricing_plan .simple_pricing_area .row {
           justify-content: space-between; }
         .simple_pricing_plan .simple_pricing_area .col-lg-4 {
@@ -1604,7 +1671,7 @@ header {
 
   .simple_pricing_plan .card_wrapper {
     padding: 60px;
-    border: 1px solid #1a2630; }
+    border: 1px solid #e4e4e4; }
     @media only screen and (min-width: 1025px) and (max-width: 1280px) {
       .simple_pricing_plan .card_wrapper {
         padding: 40px 30px; } }
@@ -1614,39 +1681,82 @@ header {
     @media only screen and (max-width: 991px) {
       .simple_pricing_plan .card_wrapper {
         padding: 30px 0px; } }
-    @media only screen and (max-width: 991px) {
-      .simple_pricing_plan .card_wrapper.price_card_1 {
-        padding: 40px 32px 40px 0px;
-        border: none;
-        border-bottom: 1px solid #1a2630 !important; } }
-    @media only screen and (max-width: 991px) {
-      .simple_pricing_plan .card_wrapper.price_card_2 {
-        padding: 40px 0px 40px 32px;
-        border: none;
-        border-left: 1px solid #1a2630 !important;
-        border-bottom: 1px solid #1a2630 !important; } }
-    @media only screen and (max-width: 991px) {
-      .simple_pricing_plan .card_wrapper.price_card_3 {
-        padding: 40px 32px 40px 0px;
-        border: none;
-        border-bottom: 1px solid #1a2630 !important; } }
-    @media only screen and (max-width: 991px) {
-      .simple_pricing_plan .card_wrapper.price_card_4 {
-        padding: 40px 0px 40px 32px;
-        border: none;
-        border-left: 1px solid #1a2630 !important;
-        border-bottom: 1px solid #1a2630 !important; } }
-    @media only screen and (max-width: 991px) {
-      .simple_pricing_plan .card_wrapper.price_card_5 {
-        padding: 40px;
-        border: none; } }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .simple_pricing_plan .card_wrapper {
+        padding: 0px; } }
+    .simple_pricing_plan .card_wrapper.price_card_1 {
+      border: none;
+      border-left: 1px solid #e4e4e4; }
+      @media only screen and (max-width: 991px) {
+        .simple_pricing_plan .card_wrapper.price_card_1 {
+          padding: 40px 32px 40px 0px;
+          border: none;
+          border-bottom: 1px solid #e4e4e4 !important; } }
+  @media only screen and (max-width: 991px) and (min-width: 0px) and (max-width: 767px) {
+    .simple_pricing_plan .card_wrapper.price_card_1 {
+      padding: 35px 0px 20px 0px; } }
+
+    .simple_pricing_plan .card_wrapper.price_card_2 {
+      border: none;
+      border-left: 1px solid #e4e4e4; }
+      @media only screen and (max-width: 991px) {
+        .simple_pricing_plan .card_wrapper.price_card_2 {
+          padding: 40px 0px 40px 32px;
+          border: none;
+          border-left: 1px solid #e4e4e4 !important;
+          border-bottom: 1px solid #e4e4e4 !important; } }
+  @media only screen and (max-width: 991px) and (min-width: 0px) and (max-width: 767px) {
+    .simple_pricing_plan .card_wrapper.price_card_2 {
+      padding: 35px 0px 20px 0px;
+      border-left: none !important; } }
+
+    .simple_pricing_plan .card_wrapper.price_card_3 {
+      border: none;
+      border-left: 1px solid #e4e4e4;
+      border-right: 1px solid #e4e4e4; }
+      @media only screen and (max-width: 991px) {
+        .simple_pricing_plan .card_wrapper.price_card_3 {
+          padding: 40px 32px 40px 0px;
+          border: none;
+          border-bottom: 1px solid #e4e4e4 !important; } }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .simple_pricing_plan .card_wrapper.price_card_3 {
+          padding: 35px 0px 20px 0px; } }
+    .simple_pricing_plan .card_wrapper.price_card_4 {
+      border-bottom: none;
+      border-right: none; }
+      @media only screen and (max-width: 991px) {
+        .simple_pricing_plan .card_wrapper.price_card_4 {
+          padding: 40px 0px 40px 32px;
+          border: none;
+          border-left: 1px solid #e4e4e4 !important;
+          border-bottom: 1px solid #e4e4e4 !important; } }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .simple_pricing_plan .card_wrapper.price_card_4 {
+          padding: 35px 0px 20px 0px;
+          border-left: none !important; } }
+    .simple_pricing_plan .card_wrapper.price_card_5 {
+      border-bottom: none; }
+      @media only screen and (max-width: 991px) {
+        .simple_pricing_plan .card_wrapper.price_card_5 {
+          padding: 40px;
+          border: none; } }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .simple_pricing_plan .card_wrapper.price_card_5 {
+          padding: 35px 0px 20px 0px; } }
   .simple_pricing_plan .pricing_card {
     border-radius: 12px;
     padding: 36px 24px 24px;
-    background: #141a1f;
+    background: #fff;
     position: relative; }
     .simple_pricing_plan .pricing_card.style_1 {
       background-color: #06f; }
+      .simple_pricing_plan .pricing_card.style_1 h4 {
+        color: #fff; }
+        .simple_pricing_plan .pricing_card.style_1 h4 span {
+          color: #fff; }
+      .simple_pricing_plan .pricing_card.style_1 li {
+        color: #fff; }
     .simple_pricing_plan .pricing_card.style_2 {
       background-color: #ffc001; }
       .simple_pricing_plan .pricing_card.style_2 h4 {
@@ -1662,7 +1772,8 @@ header {
     background-color: #f5f7fa;
     position: absolute;
     top: -16px;
-    left: 20px; }
+    left: 20px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25); }
     .simple_pricing_plan .card_subtitle p {
       font-family: var(--font-family);
       font-weight: 500;
@@ -1680,13 +1791,13 @@ header {
     font-family: "Prompt", sans-serif;
     line-height: 68px;
     letter-spacing: -0.03em;
-    color: #f5f7fa; }
+    color: #002f41; }
     .simple_pricing_plan .card_price h4 span {
       font-weight: 400;
       font-size: 16px;
       line-height: 26px;
       letter-spacing: -0.02em;
-      color: #b5bcc4; }
+      color: #667581; }
   .simple_pricing_plan .pricing_list {
     margin-top: 16px; }
     .simple_pricing_plan .pricing_list ul {
@@ -1697,7 +1808,7 @@ header {
         font-size: 20px;
         line-height: 32px;
         letter-spacing: -0.02em;
-        color: #b5bcc4; }
+        color: #667581; }
   .simple_pricing_plan .pricing_list_area ul {
     display: flex;
     flex-direction: column;
@@ -1709,6 +1820,7 @@ header {
       flex-direction: row;
       justify-content: flex-start;
       align-items: flex-start;
+      flex-wrap: wrap;
       gap: 10px; }
       .simple_pricing_plan .pricing_list_area ul li b {
         font-weight: 500;
@@ -1716,20 +1828,41 @@ header {
         line-height: 36px;
         letter-spacing: -0.02em;
         text-align: right;
-        color: #f5f7fa;
+        color: #667581;
         width: 165px; }
+        @media only screen and (min-width: 0px) and (max-width: 767px) {
+          .simple_pricing_plan .pricing_list_area ul li b {
+            text-align: left; } }
       .simple_pricing_plan .pricing_list_area ul li p {
         font-weight: 400;
         font-size: 20px;
         line-height: 32px;
         letter-spacing: -0.02em;
-        color: #b5bcc4; }
+        color: #667581; }
+        @media only screen and (min-width: 0px) and (max-width: 767px) {
+          .simple_pricing_plan .pricing_list_area ul li p {
+            font-size: 16px; } }
 
 /*---Simple Pricing Plan End---*/
 /*---Frequently Asked Question Start---*/
 .frequently_question_area {
   background: #002a3a;
+  margin-top: -1px;
   padding: 130px 0px; }
+  @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    .frequently_question_area {
+      padding: 120px 0px; } }
+  @media only screen and (min-width: 992px) and (max-width: 1024px) {
+    .frequently_question_area {
+      padding: 98px 0px; } }
+  @media only screen and (max-width: 991px) {
+    .frequently_question_area {
+      padding: 80px 0px; } }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .frequently_question_area {
+      padding: 65px 0px; } }
+  .frequently_question_area .heading_area {
+    margin-bottom: 40px; }
   .frequently_question_area .faq-section {
     width: 100%; }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -1744,19 +1877,27 @@ header {
       margin-bottom: 12px;
       border: 1px solid rgba(197, 203, 211, 0.15);
       border-radius: 12px;
-      padding: 20px 32px;
+      padding: 32px 31px;
       background: #002e40;
       overflow: hidden; }
+      @media only screen and (max-width: 991px) {
+        .frequently_question_area .accordion .accordion-item {
+          padding: 25px 25px; } }
       @media only screen and (min-width: 0px) and (max-width: 767px) {
         .frequently_question_area .accordion .accordion-item {
-          margin-bottom: 8px; } }
+          margin-bottom: 8px;
+          padding: 13px 5px; } }
       .frequently_question_area .accordion .accordion-item.active {
-        background-color: #fff; }
+        background-color: #f5f7fa; }
         .frequently_question_area .accordion .accordion-item.active .accordion-header h3 {
           color: #002f41; }
+          .frequently_question_area .accordion .accordion-item.active .accordion-header h3 span {
+            color: #002a3a;
+            background-color: transparent;
+            border: 1px solid transparent; }
         .frequently_question_area .accordion .accordion-item.active .accordion-header .icon {
           transform: rotate(180deg);
-          background-color: #fff; }
+          background-color: transparent; }
         .frequently_question_area .accordion .accordion-item.active .accordion-content {
           height: auto; }
     .frequently_question_area .accordion .accordion-header {
@@ -1764,7 +1905,6 @@ header {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      padding: 10px 30px;
       cursor: pointer;
       transition: background 0.3s ease; }
       @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -1773,18 +1913,49 @@ header {
       .frequently_question_area .accordion .accordion-header h3 {
         font-weight: 500;
         font-size: 24px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 20px;
         line-height: 36px;
         letter-spacing: -0.02em;
         color: #f5f7fa; }
+        @media only screen and (min-width: 0px) and (max-width: 767px) {
+          .frequently_question_area .accordion .accordion-header h3 {
+            width: 100%;
+            gap: 12px; }
+            .frequently_question_area .accordion .accordion-header h3 p {
+              width: calc(100% - 60px); } }
+        @media only screen and (min-width: 0px) and (max-width: 767px) {
+          .frequently_question_area .accordion .accordion-header h3 {
+            font-size: 18px;
+            line-height: 28px; } }
+        .frequently_question_area .accordion .accordion-header h3 span {
+          border: 1px solid rgba(197, 203, 211, 0.15);
+          border-radius: 41px;
+          text-align: center;
+          line-height: 44px;
+          width: 44px;
+          height: 44px;
+          display: inline-block;
+          background: #002f41;
+          font-weight: 600;
+          font-size: 18px;
+          text-align: center;
+          color: #f5f7fa; }
       .frequently_question_area .accordion .accordion-header .icon {
         color: #b5bcc4; }
+        @media only screen and (min-width: 0px) and (max-width: 767px) {
+          .frequently_question_area .accordion .accordion-header .icon {
+            margin-bottom: 20px; } }
     .frequently_question_area .accordion .accordion-content {
       height: 0;
       overflow: hidden;
       margin-top: -2px;
       transition: height 0.5s ease-out, padding 0.5s ease-out; }
       .frequently_question_area .accordion .accordion-content p {
-        padding: 21px 30px 20px 30px;
+        padding: 0px 30px 0px 63px;
         font-weight: 400;
         font-size: 16px;
         line-height: 26px;

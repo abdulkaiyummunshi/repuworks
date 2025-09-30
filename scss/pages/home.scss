@@ -2,8 +2,23 @@
 .tk_hero_section{
     background-color: $bg_color;
     height: 1062px;
-    padding-top: 174px;
-    
+    padding-top: 162px;
+    .btn_wrapper{
+        margin-top: 31px;
+        @include sm{
+            margin-top: 15px;
+        }
+    }
+    .stars{
+        @include md{
+            width: 100%;
+            height: 100px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
     @include sm{
         height: 845px;
         padding-top: 136px;
@@ -121,6 +136,7 @@
 
 /*---Logo Slider Start---*/
 .logo_slider_area{
+    margin-top: -1px;
     @include flex(row, center, center);
     background-color: #002a3a;
     border-bottom: 1px solid rgba(245, 247, 250, 0.15);
@@ -148,7 +164,20 @@
 
 /*---Problem Solution Start---*/
 .problem_solution_area{
+    margin-top: -1px;
     padding:130px 0px;
+    @include nesthubmax{
+        padding: 120px 0px;
+    }
+    @include nesthub{
+        padding: 98px 0px;
+    }
+    @include md{
+        padding: 80px 0px;
+    }
+    @include sm{
+        padding: 65px 0px;
+    }
     background: #002a3a;
     .problem_solution_wrapper{
         margin-top: 60px;
@@ -257,6 +286,18 @@
 /*---How it Work Start---*/
 .how_works_area{
     padding: 132px 0px;
+    @include nesthubmax{
+        padding: 120px 0px;
+    }
+    @include nesthub{
+        padding: 98px 0px;
+    }
+    @include md{
+        padding: 80px 0px;
+    }
+    @include sm{
+        padding: 65px 0px;
+    }
     background-color: $bg_color;
     .heading_area{
         padding: 0px 120px;
@@ -499,13 +540,25 @@
 .performance_bullet_area{
     background: #002a3a;
     padding: 136px 0px;
+    @include nesthubmax{
+        padding: 120px 0px;
+    }
+    @include nesthub{
+        padding: 98px 0px;
+    }
+    @include md{
+        padding: 80px 0px;
+    }
+    @include sm{
+        padding: 65px 0px;
+    }
     .performance_bullet_wrapper{
         ul{
             border: 1px solid rgba(197, 203, 211, 0.15);
             border-radius: 16px;
             @include flex(row, space-between, center);
             gap: 20px;
-            @include sm{
+            @include md{
                 gap: 0px;
             }
             flex-wrap: wrap;
@@ -527,6 +580,8 @@
                 }
                 @include md{
                     width: 100%;
+                    padding: 42px 40px;
+                    
                 }
                 @include sm{
                     @include flex(column, flex-start, flex-start);
@@ -544,10 +599,30 @@
 /*---Simple Pricing Plan Start---*/
 .simple_pricing_plan{
     width: 100%;
-    background-color: #141a1f;
+    background: #002f41;
     padding: 132px 0px;
+    @include nesthubmax{
+        padding: 120px 0px;
+    }
+    @include nesthub{
+        padding: 98px 0px;
+    }
+    @include md{
+        padding: 80px 0px;
+    }
+    @include sm{
+        padding: 65px 0px;
+    }
+    .btn_wrapper{
+        @include sm{
+            width: 100%;
+            a{
+                width: 100%;
+            }
+        }
+    }
     .tk_pricing_plan{
-        background-color: #010c15;
+        background: #f6f6f6;
         @include border-radius(20px);
         .heading_area{
             padding: 0px 120px;
@@ -569,11 +644,17 @@
                 @include nesthub{
                     padding: 40px 0px 20px 0px;
                 }
+                border-left: 1px solid #e4e4e4;
+                border-right: 1px solid #e4e4e4;
                 @include md{
                     padding: 56px 10px 30px 10px;
+                    border: none;
+                    
                 }
-                border-left: 1px solid #1a2630;
-                border-right: 1px solid #1a2630;
+                @include sm{
+                    border: none;
+                    padding: 28px 0px 15px 0px;
+                }
                 &.style_1{
                     padding: 43px 60px 120px 60px;
                     @include nesthubmax{
@@ -582,6 +663,9 @@
                     @include nesthub{
                         padding: 30px 30px 60px 30px;
                     }
+                    @include sm{
+                        padding: 0px 33px 20px 33px;
+                    }
                 }
                 p{
                     font-weight: 400;
@@ -589,8 +673,13 @@
                     line-height: 32px;
                     letter-spacing: -0.02em;
                     text-align: center;
-                    color: #b5bcc4;
+                    color:  #667581;
                     margin-bottom: 32px;
+                    @include sm{
+                        font-size: 16px;
+                        text-align: left;
+                        margin-bottom: 8px;
+                    }
                     b{
                         font-weight: 600;
                     }
@@ -599,7 +688,7 @@
         }
     }
     .simple_pricing_area{
-        background-color: #010c15;
+        background: #f6f6f6;
         padding: 0px 120px;
         @include nesthubmax{
             padding: 0px 60px;
@@ -609,6 +698,10 @@
         }
         @include md{
             padding: 0px 50px;
+            @include sm{
+                padding: 0px 30px;
+                border: none !important;
+            }
             .row{
                 justify-content: space-between;
             }
@@ -620,13 +713,13 @@
                
             }
         }
-        border-top: 1px solid #1a2630;
-        border-bottom: 1px solid #1a2630;
+        border-top: 1px solid #e4e4e4;
+        border-bottom: 1px solid #e4e4e4;
         
     }
     .card_wrapper{
         padding: 60px;
-        border: 1px solid #1a2630;
+        border: 1px solid #e4e4e4;
         @include nesthubmax{
             padding: 40px 30px;
         }
@@ -635,46 +728,74 @@
         }
         @include md{
             padding: 30px 0px;
-        
-            // border-left: none;
 
         }
+        @include sm{
+            padding: 0px;
+        }
         &.price_card_1{
+            border: none;
+            border-left: 1px solid #e4e4e4;
             @include md{
                 padding: 40px 32px 40px 0px;
+                @include sm{
+                    padding: 35px 0px 20px 0px;
+                }
                 border: none;
-                border-bottom: 1px solid #1a2630 !important;
+                border-bottom: 1px solid #e4e4e4 !important;
             }
         }
         &.price_card_2{
+            border: none;
+            border-left: 1px solid #e4e4e4;
             @include md{
                 padding: 40px 0px 40px 32px;
                 border: none;
-                border-left: 1px solid #1a2630 !important;
-                border-bottom: 1px solid #1a2630 !important;
+                border-left: 1px solid #e4e4e4 !important;
+                border-bottom: 1px solid #e4e4e4 !important;
+                @include sm{
+                    padding: 35px 0px 20px 0px;
+                    border-left: none !important;
+                }
             }
         }
         &.price_card_3{
+            border: none;
+            border-left: 1px solid #e4e4e4;
+            border-right: 1px solid #e4e4e4;
             @include md{
                 padding: 40px 32px 40px 0px;
                 border: none;
-                border-bottom: 1px solid #1a2630 !important;
+                border-bottom: 1px solid #e4e4e4 !important;
                 
             }
+            @include sm{
+                    padding: 35px 0px 20px 0px;
+                }
         }
         &.price_card_4{
+            border-bottom: none;
+            border-right: none;
             @include md{
                 padding: 40px 0px 40px 32px;
                 border: none;
-                border-left: 1px solid #1a2630 !important;
-                border-bottom: 1px solid #1a2630 !important;
+                border-left: 1px solid #e4e4e4 !important;
+                border-bottom: 1px solid #e4e4e4 !important;
             }
+            @include sm{
+                    padding: 35px 0px 20px 0px;
+                    border-left: none !important;
+                }
         }
         &.price_card_5{
+            border-bottom: none;
             @include md{
                 padding: 40px;
                 border: none;
             }
+            @include sm{
+                    padding: 35px 0px 20px 0px;
+                }
         }
         // background-color: green;
 
@@ -682,10 +803,19 @@
     .pricing_card{
         border-radius: 12px;
         padding: 36px 24px 24px;
-        background: #141a1f;
+        background: #fff;
         position: relative;
         &.style_1{
             background-color: $primary;
+            h4{
+                color: #fff;
+                span{
+                    color: #fff;
+                }
+            }
+            li{
+                color: #fff;
+            }
         }
         &.style_2{
             background-color: #ffc001;
@@ -709,6 +839,8 @@
         position: absolute;
         top: -16px;
         left: 20px;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+
         p{
             font-family: var(--font-family);
         font-weight: 500;
@@ -730,13 +862,13 @@
             font-family: $second-family;
             line-height: 68px;
             letter-spacing: -0.03em;
-            color: #f5f7fa;
+            color: #002f41;
             span{
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 26px;
                 letter-spacing: -0.02em;
-                color: #b5bcc4;
+                color: #667581;
             }
         }
     }
@@ -750,7 +882,7 @@
                 font-size: 20px;
                 line-height: 32px;
                 letter-spacing: -0.02em;
-                color: #b5bcc4;
+                color: #667581;
             }
         }
     }
@@ -760,6 +892,7 @@
             gap: 20px;
             li{
                 @include flex(row, flex-start, flex-start);
+                flex-wrap: wrap;
                 gap: 10px;
                 b{
                     font-weight: 500;
@@ -767,15 +900,22 @@
                     line-height: 36px;
                     letter-spacing: -0.02em;
                     text-align: right;
-                    color: #f5f7fa;
+                    @include sm{
+                        text-align: left;
+
+                    }
+                    color: #667581;
                     width: 165px;
                 }
                 p{
                     font-weight: 400;
                     font-size: 20px;
+                    @include sm{
+                        font-size: 16px;
+                    }
                     line-height: 32px;
                     letter-spacing: -0.02em;
-                    color: #b5bcc4;
+                    color: #667581;
                 }
             }
         }
@@ -786,7 +926,23 @@
 /*---Frequently Asked Question Start---*/
 .frequently_question_area{
    background: #002a3a;
+   margin-top: -1px;
    padding: 130px 0px;
+   @include nesthubmax{
+        padding: 120px 0px;
+    }
+    @include nesthub{
+        padding: 98px 0px;
+    }
+    @include md{
+        padding: 80px 0px;
+    }
+    @include sm{
+        padding: 65px 0px;
+    }
+   .heading_area{
+    margin-bottom: 40px;
+   }
 .faq-section {
     width: 100%;
     @include sm{
@@ -802,23 +958,32 @@
         margin-bottom: 12px;
         border: 1px solid rgba(197, 203, 211, 0.15);
         border-radius: 12px;
-        padding: 20px 32px;
+        padding: 32px 31px;
+        @include md{
+            padding: 25px 25px;
+        }
         background: #002e40;
         @include sm{
             margin-bottom: 8px;
+            padding: 13px 5px;
         }
         overflow: hidden; 
         &.active {
-            background-color: $white;
+            background-color: #f5f7fa;
             .accordion-header {
                 h3{
                     color: #002f41;
+                    span{
+                        color:  #002a3a;
+                        background-color: transparent;
+                        border: 1px solid transparent;
+                    }
                 }
                 
 
                 .icon {
                     transform: rotate(180deg); 
-                    background-color: $white;
+                    background-color: transparent;
                 }
             }
             .accordion-content {
@@ -829,7 +994,6 @@
 
     .accordion-header {
         @include flex(row, space-between, center);
-        padding: 10px 30px;
         @include sm{
             padding: 4px 15px;
         }
@@ -838,12 +1002,43 @@
         h3{
             font-weight: 500;
             font-size: 24px;
+            @include flex(row, flex-start, flex-start);
+            gap: 20px;
+            @include sm{
+                width: 100%;
+                gap: 12px;
+                p{
+                    width: calc(100% - 60px);
+                }
+            }
             line-height: 36px;
             letter-spacing: -0.02em;
             color: #f5f7fa;
+            @include sm{
+                font-size: 18px;
+                line-height: 28px;
+            }
+            span{
+                border: 1px solid rgba(197, 203, 211, 0.15);
+                border-radius: 41px;
+                text-align: center;
+                line-height: 44px;
+                width: 44px;
+                height: 44px;
+                display: inline-block;
+                background: #002f41;
+                // margin-right: 10px;
+                font-weight: 600;
+                font-size: 18px;
+                text-align: center;
+                color: #f5f7fa;
+            }
         }
         .icon {
             color:  #b5bcc4;
+            @include sm{
+                margin-bottom: 20px;
+            }
         }
     }
 
@@ -853,7 +1048,7 @@
         margin-top: -2px;
         transition: height 0.5s ease-out, padding 0.5s ease-out;
         p{
-             padding: 21px 30px 20px 30px;
+            padding: 0px 30px 0px 63px;
             font-weight: 400;
             font-size: 16px;
             line-height: 26px;
