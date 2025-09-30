@@ -390,128 +390,127 @@ header{
 				}
 			}
 		
-			.main-menu {
-			 	ul {
-					background-color: transparent;
-					border: 1px solid $border;
-					li {
-					&.menu-item-has-children{
+			// .main-menu {
+			//  	ul {
+			// 		background-color: transparent;
+			// 		li {
+			// 		&.menu-item-has-children{
 
-					&::after{
-						color: $text_color !important;
+			// 		&::after{
+			// 			color: $text_color !important;
 						
-					}
-					@include transition(0.4s);
-					&:hover{
-						&::after{
-							color: $primary !important;
+			// 		}
+			// 		@include transition(0.4s);
+			// 		&:hover{
+			// 			&::after{
+			// 				color: $primary !important;
 
-						}
-					}
-					ul{
-						padding: 0px;
-						background-color: $white;
+			// 			}
+			// 		}
+			// 		ul{
+			// 			padding: 0px;
+			// 			background-color: $white;
 						
-						@include flex(column, flex-start, flex-start);
-						flex-wrap: wrap;
-						@include border-radius(0px);
-						a{
-							@include border-radius(0px);
-						}
-					}
-					a{
-						padding-right: 30px;
+			// 			@include flex(column, flex-start, flex-start);
+			// 			flex-wrap: wrap;
+			// 			@include border-radius(0px);
+			// 			a{
+			// 				@include border-radius(0px);
+			// 			}
+			// 		}
+			// 		a{
+			// 			padding-right: 30px;
 						
 
-					}
-					&::after{
-						content: "\f107";
-						font-family: "FontAwesome";
-						position: absolute;
-						top: 50%;
-						color: $white;
-						display: inline-block;
-						@include transformY(-50%);
-						right: 10px;
-						@include transition(0.4s);
+			// 		}
+			// 		&::after{
+			// 			content: "\f107";
+			// 			font-family: "FontAwesome";
+			// 			position: absolute;
+			// 			top: 50%;
+			// 			color: $white;
+			// 			display: inline-block;
+			// 			@include transformY(-50%);
+			// 			right: 10px;
+			// 			@include transition(0.4s);
 						
-					}
-					&:hover{
-						&::after{
-							margin-top: -10px;
-						color: $primary;
-						transform: rotate(180deg);
-						-webkit-transform: rotate(180deg);
-						-moz-transform: rotate(180deg);
-						-ms-transform: rotate(180deg);
-						-o-transform: rotate(180deg);
-					}
-    				}
+			// 		}
+			// 		&:hover{
+			// 			&::after{
+			// 				margin-top: -10px;
+			// 			color: $primary;
+			// 			transform: rotate(180deg);
+			// 			-webkit-transform: rotate(180deg);
+			// 			-moz-transform: rotate(180deg);
+			// 			-ms-transform: rotate(180deg);
+			// 			-o-transform: rotate(180deg);
+			// 		}
+    		// 		}
 
-			  	}
-					a {
-					  padding: 9px 13px;
-					  color: $text_color;
-						@include md {
-							font-size: 12px;
-							padding: 4px 5px;
-						}
-					  &:hover{
-						color: $primary;
-					  }
-					&.active{
-						color: $primary;
-						&:hover{
-							color: $primary;
-						}
-					}
-					}
-				  }
-				  ul {
-					li {
-					  > a {
-						padding: 10px 20px;
+			//   	}
+			// 		a {
+			// 		  padding: 9px 13px;
+			// 		  color: $text_color;
+			// 			@include md {
+			// 				font-size: 12px;
+			// 				padding: 4px 5px;
+			// 			}
+			// 		  &:hover{
+			// 			color: $primary;
+			// 		  }
+			// 		&.active{
+			// 			color: $primary;
+			// 			&:hover{
+			// 				color: $primary;
+			// 			}
+			// 		}
+			// 		}
+			// 	  }
+			// 	  ul {
+			// 		li {
+			// 		  > a {
+			// 			padding: 10px 20px;
 						
-					  }
-					}
-				  }
-				}
-			}
-				&.style_1{
-			ul{
-				li{
-				a{
-						color: $text_color !important;
+			// 		  }
+			// 		}
+			// 	  }
+			// 	}
+			// }
+	// 			&.style_1{
+	// 		ul{
+	// 			li{
+	// 			a{
+	// 					color: $text_color !important;
 						
-					 &.active{
-						color: $primary !important;
-						&:hover{
-							color: $primary;
-						}
+	// 				 &.active{
+	// 					color: $primary !important;
+	// 					&:hover{
+	// 						color: $primary;
+	// 					}
 						
-					}
-					}
-					ul{
-							background-color: $white !important;
-							li{
-									a{
-										&:hover{
-										background-color: $primary;
-										color: $white !important;
-									}
+	// 				}
+	// 				}
+	// 				ul{
+	// 						background-color: $white !important;
+	// 						li{
+	// 								a{
+	// 									&:hover{
+	// 									background-color: $primary;
+	// 									color: $white !important;
+	// 								}
 								
-									&.acitve{
-										color: $white !important;
-										background-color: #000 !important;
-									}
-									}
+	// 								&.acitve{
+	// 									color: $white !important;
+	// 									background-color: #000 !important;
+	// 								}
+	// 								}
 								
-							}
-						}
-				}
-			}
+	// 						}
+	// 					}
+	// 			}
+	// 		}
 		
-	  }
+	//   }
 		}
 	
 	}
